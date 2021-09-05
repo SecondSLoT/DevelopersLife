@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_alfa75">#BF000000</color>
+
+    <!-- YELLOW -->
+    <color name="yellow_600">#FDD835</color>
+
+    <!-- GREEN -->
+    <color name="green_A700">#00C853</color>
+
+    <!-- CYAN -->
+    <color name="cyan_800">#00838F</color>
+    <color name="cyan_800_light">#4fb3bf</color>
+    <color name="cyan_800_dark">#005662</color>
+
+    <!-- GRAY -->
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

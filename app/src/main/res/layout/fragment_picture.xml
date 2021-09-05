@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_to_buttons"
+        android:visibility="invisible"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/picture_description" />
+
+            <TextView
+                android:id="@+id/description_text_view"
+                style="?attr/textAppearanceBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="@drawable/gradient"
+                android:paddingHorizontal="@dimen/margin_horizontal"
+                android:paddingVertical="@dimen/margin_default"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/error_message"
+        layout="@layout/error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/progress_circular"
+        layout="@layout/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="@dimen/button"
+        android:layout_height="@dimen/button"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="@dimen/margin_to_buttons"
+        android:background="@drawable/shape_button"
+        android:contentDescription="@string/button_back_description"
+        android:src="@drawable/ic_baseline_replay_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintVertical_weight="0"
+        app:tint="@color/button_back"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="@dimen/button"
+        android:layout_height="@dimen/button"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="@dimen/margin_to_buttons"
+        android:background="@drawable/shape_button"
+        android:contentDescription="@string/button_next_description"
+        android:src="@drawable/ic_baseline_east_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintVertical_weight="0"
+        app:tint="@color/button_next"
+        tools:ignore="RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

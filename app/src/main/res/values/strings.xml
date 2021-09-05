@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Developers Life</string>
+
+    <string name="button_retry">Retry</string>
+
+    <!--    Descriptions-->
+    <string name="picture_description">Gif animation</string>
+    <string name="button_back_description">Button back</string>
+    <string name="button_next_description">Button next</string>
+
+    <!--    Categories-->
+    <string name="latest">Latest</string>
+    <string name="hot">Hot</string>
+    <string name="top">Best</string>
+
+    <!--    Errors-->
+    <string name="download_error">Error downloading data.
+    Check your internet connection</string>
+</resources>
