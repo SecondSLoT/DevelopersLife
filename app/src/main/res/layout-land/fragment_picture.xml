@@ -79,9 +79,9 @@
         android:background="@drawable/shape_button"
         android:contentDescription="@string/button_back_description"
         android:src="@drawable/ic_baseline_replay_36"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_next"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_weight="0"
         app:tint="@color/button_back"
         tools:ignore="RtlHardcoded" />
@@ -94,9 +94,10 @@
         android:background="@drawable/shape_button"
         android:contentDescription="@string/button_next_description"
         android:src="@drawable/ic_baseline_east_36"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_back"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintVertical_weight="0"
         app:tint="@color/button_next"
         tools:ignore="RtlHardcoded" />
